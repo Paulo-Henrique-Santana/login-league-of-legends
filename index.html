@@ -5,31 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Login League of Legends</title>
+  <title>Login</title>
 </head>
 <body>
   <main>
-    <img id="logo-riot" src="riot-games-logo.png" alt="Logo Riot Games">
+    <img id="logo-riot" src="./img/riot-games-logo.png" alt="Logo Riot Games">
+
     <h1>Fazer Login</h1>
+
     <form>
       <input class="formulario-campos" type="text" name="" id="" placeholder="Nome de Usuário">
       <input class="formulario-campos" type="password" name="" id="" placeholder="Senha">
+
       <ul id="links">
-        <li><a id="link-facebook" class="formulario-link" href="#"></a></li>
-        <li><a id="link-google" class="formulario-link" href="#"></a></li>
-        <li><a id="link-apple" class="formulario-link" href="#"></a></li>
+        <li><a id="link-facebook" class="formulario-link" href="https://www.facebook.com/v13.0/dialog/oauth?client_id=344190606773871&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Ffacebook&state=465b0dce105a4ac12fe91442483512e7b9faf0c1ba05da8c1a5eb1752e99&scope=email" target="_blank"></a></li>
+        <li><a id="link-google" class="formulario-link" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=openid%20profile%20email&state=685ff61e90cf36e1a28eb3454adc97b8aadab322420a1913049044c5f7b3&prompt=select_account&response_type=code&client_id=187685766663-ct6bdnthcq6jlllecpg1guhthoc7i8vv.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fgoogle&flowName=GeneralOAuthFlow" target="_blank"><img src="./img/google-icon.png" alt="Ícone Google"></a></li>
+        <li><a id="link-apple" class="formulario-link" href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&response_mode=form_post&client_id=com.riotgames.authenticator.prod.client&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fapple&scope=name%20email&nonce=f3fe1ad8e07f5a9c5566dd6b91df1caf8d81a55d60fc6f8f9fb6e56a399b&state=574dc433ef7b0a935a9c895bf5c9e999e297a990e5f7895528f0193d2758" target="_blank"><img src="./img/icone-apple.png" alt=""></a></li>
       </ul>
+
       <div id="container-checkbox">
         <input type="checkbox" name="" id="formulario-checkbox">
         <label id="formulario-checkbox-texto" for="formulario-checkbox">Manter Login</label>
       </div>
     </form>
+
     <footer>
-      <a href="#">Não consegue iniciar sessão?</a>
+      <a href="https://recovery.riotgames.com/pt-br?region=BR1" target="_blank">Não consegue iniciar sessão?</a>
     </footer>
   </main>
+
   <aside>
-    <img src="Star-Guardian.png" alt="Star Guardian">
+    <img src="./img/Star-Guardian.png" alt="Star Guardian">
   </aside>
 </body>
 </html>
