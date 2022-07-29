@@ -1,0 +1,63 @@
+#container-modal {
+  position: absolute;
+  display: none;
+}
+
+#container-modal.ativo {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal {
+  display: grid;
+  grid-template-rows: 70px auto auto;
+  justify-items: center;
+  border-radius: 6px;
+  background-color: white;
+  width: 600px;
+  height: 450px;
+}
+
+#modal p {
+ margin: 20px;
+ font-size: 1.1rem;
+ font-weight: 600;
+ color: #6f6f6f;
+}
+
+#btn-fechar {
+  justify-self: end;
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#background-btn-ok {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 6px 6px;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+#btn-ok {
+  border: none;
+  border-radius: 10px;
+  width: 450px;
+  height: 70px;
+  background-color: #292727;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 
     <h1>Fazer Login</h1>
 
-    <form>
+    <form>  
       <input class="formulario-campos" type="text" name="" id="" placeholder="Nome de Usuário">
       <input class="formulario-campos" type="password" name="" id="" placeholder="Senha">
 
@@ -34,13 +34,36 @@
       </div>
     </form>
 
-    <footer>
+    <div id="recuperar-conta">
       <a href="https://recovery.riotgames.com/pt-br?region=BR1" target="_blank">Não consegue iniciar sessão?</a>
+    </div>
+
+    <footer>
+      <span id="versao">V52.0.1</span>
     </footer>
   </main>
 
   <aside>
     <img src="./img/Star-Guardian.png" alt="Star Guardian">
   </aside>
+
+  <section id="container-modal">
+    <div id="modal">
+      <button id="btn-fechar">X</button>
+
+      <div>
+        <h1>v52.0.1</h1>
+        <p>Foundation: 4472310</p>
+        <p>UX: 4472310</p>
+        <p>SDK: 22.5.9.4470164</p>
+      </div>
+
+      <div id="background-btn-ok">
+        <button id="btn-ok">OK</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="modal.js"></script>
 </body>
 </html>

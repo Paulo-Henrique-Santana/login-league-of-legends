@@ -1,3 +1,5 @@
+@import './modal.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr auto;
-  font-family: 'Muli';
+  font-family: 'Mulish';
   height: 100vh;
 }
 
@@ -143,34 +145,39 @@ form {
   margin-left: 5px;
 }
 
-footer{
-  display: flex;
-  justify-content: center;
-  width: 100%;
+#recuperar-conta {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  user-select: none;
   padding-bottom: 50px;
   position: absolute;
   bottom: 0;
-}
-
-footer a {
-  color: #b2b2b2;
-  font-size: 0.7rem;
-  font-weight: 800;
   text-align: center;
-  text-transform: uppercase;
-  user-select: none;
+  width: 100%;
 }
 
-footer a:hover {
+#recuperar-conta a {
+  color: #b2b2b2;
+}
+
+#recuperar-conta a:hover {
   color: #111111;
 }
 
-footer::after {
-  content: "V52.0.1";
-  font-size: 0.7rem;
-  font-weight: 800;
+footer {
   position: absolute;
   right: 50px;
-  top: 5px;
+  bottom: 47px;
+}
+
+#versao {
+  font-size: 0.7rem;
+  font-weight: 800;
   color: #c7c7c7;
+  cursor: pointer;
+}
+
+#versao:hover {
+  color: #7e7e7e;
 }
