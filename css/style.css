@@ -26,11 +26,6 @@ img {
   width: 100%;
 }
 
-aside img {
-  height: 100%;
-  object-fit: cover;
-}
-
 h1 {
   text-align: center;
   user-select: none;
@@ -53,6 +48,8 @@ a {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   padding: 0 70px;
 }
 
@@ -145,6 +142,27 @@ form {
   margin-left: 5px;
 }
 
+form button {
+  margin-top: 200px;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 4px solid #e8e8e8;
+  border-radius: 20px;
+  align-self: center;
+}
+
+form button.ativo {
+  background-color: #d13639;
+  border: 4px solid #d13639;
+  cursor: pointer;
+}
+
+form button.ativo:hover {
+  background-color: #bc252a;
+  border: 4px solid #bc252a;
+}
+
 #recuperar-conta {
   font-size: 0.7rem;
   font-weight: 800;
@@ -180,4 +198,33 @@ footer {
 
 #versao:hover {
   color: #7e7e7e;
+}
+
+#tema-lol {
+  height: 100%;
+  object-fit: cover;
+}
+
+#container-tema-lol {
+  position: relative;
+}
+
+#botao-usuario {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  margin: 20px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  padding: 10px;
+  width: 70px;
+  background-color: #23272b;
+  cursor: pointer;
+  transition: filter 0.5s;
+
+}
+
+#botao-usuario:hover {
+  filter: brightness(130%);
 }
