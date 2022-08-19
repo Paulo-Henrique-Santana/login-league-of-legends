@@ -1,9 +1,9 @@
-#container-modal {
+#container-modal-versao {
   position: absolute;
   display: none;
 }
 
-#container-modal.ativo {
+#container-modal-versao.ativo {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-#modal {
+#modal-versao {
   display: grid;
   grid-template-rows: 70px auto auto;
   justify-items: center;
@@ -23,19 +23,7 @@
   height: 45vh;
 }
 
-#modal h1 {
-  font-size: 1.5rem;
-}
-
-#modal p {
- margin: 20px;
- font-size: 1.2rem;
- font-weight: 500;
- color: #6f6f6f;
- text-align: center;
-}
-
-#btn-fechar {
+#versao-btn-fechar {
   font-size: 1rem;
   font-weight: bold;
   font-family: cursive;
@@ -47,6 +35,19 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+#modal-versao h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#modal-versao p {
+ margin: 20px;
+ font-size: 1.2rem;
+ font-weight: 500;
+ color: #6f6f6f;
+ text-align: center;
 }
 
 #background-btn-ok {

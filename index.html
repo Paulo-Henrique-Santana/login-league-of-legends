@@ -16,9 +16,9 @@
   <main>
     <img id="logo-riot" src="./img/riot-games-logo.png" alt="Logo Riot Games">
 
-    <h1>Fazer login</h1>
+    <h1 id="titulo-login">Fazer login</h1>
 
-    <form>  
+    <form id="formulario-login">  
       <input class="formulario-campos" type="text" name="" id="" placeholder="Nome de Usuário">
       <input class="formulario-campos" type="password" name="" id="" placeholder="Senha">
 
@@ -30,19 +30,17 @@
 
       <div id="container-checkbox">
         <input type="checkbox" name="" id="formulario-checkbox">
-        <label id="formulario-checkbox-texto" for="formulario-checkbox">Manter login</label>
+        <label for="formulario-checkbox">Manter login</label>
       </div>
 
       <!-- <button>x</button> -->
     </form>
 
-    
-
     <div id="recuperar-conta">
       <a href="https://recovery.riotgames.com/pt-br?region=BR1" target="_blank">Não consegue iniciar sessão?</a>
     </div>
 
-    <footer>
+    <footer id="rodape-login">
       <span id="versao">V52.0.1</span>
     </footer>
   </main>
@@ -50,11 +48,21 @@
   <div id="container-tema-lol">
     <img id="tema-lol" src="./img/Star-Guardian.png" alt="Star Guardian">
     <div id="botao-usuario"><img src="img/usuario-icone.png" alt=""></div>
+
+    <div id="menu-usuario">
+      <nav>
+        <ul>
+          <li><a href="#">Configurações</a></li>
+          <li><a id="botao-encerrar" href="#">Encerrar Sessão</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 
-  <section id="container-modal">
-    <div id="modal">
-      <button id="btn-fechar">X</button>
+  <section id="container-modal-versao">
+    <div id="modal-versao">
+      <button id="versao-btn-fechar">X</button>
 
       <div>
         <h1>v52.0.1</h1>
@@ -68,6 +76,44 @@
       </div>
     </div>
   </section>
+
+  <!-- <section id="container-modal-configs">
+    <div id="modal-configs">
+      <button id="configs-btn-fechar">x</button>
+      <div>
+        <h1>Configurações</h1>
+        <button>League of Legends</button>
+      </div>
+      <div>
+        <h2>League of Legends</h2>
+        <div>
+          <p>Idioma do texto do jogo</p>
+          <select name="" id="">
+            <option value="">Português</option>
+          </select>
+        </div>
+        <div>
+          <p>Patchline Atual</p>
+          <select name="" id="">
+            <option value="">Live(BR)</option>
+          </select>
+        </div>
+        <div>
+          <p>Caminho de instalação</p>
+          <select name="" id="">
+            <option value="">E:\Riot Games\League of Legends</option>
+          </select>
+        </div>
+        <button>Reparar</button>
+      </div>
+      <footer>
+        <p>Termos de Serviço</p>
+        <p>Terceiros</p>
+        <p>Aviso de Privacidade</p>
+        <p>v55.0.5.4569054</p>
+      </footer>
+    </div>
+  </section> -->
 
   <script src="modal.js"></script>
 </body>

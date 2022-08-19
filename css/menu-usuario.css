@@ -1,0 +1,43 @@
+#menu-usuario {
+  display: none;
+}
+
+#menu-usuario.ativo {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  background-color: #211f1f;
+  border-radius: 1px;
+}
+
+#menu-usuario nav {
+  padding: 30px;
+}
+
+#menu-usuario li + li {
+  padding-top: 10px;
+}
+
+#menu-usuario a {
+  display: block;
+  padding: 5px 40px 10px 8px;
+  color: #b8b8b8;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#menu-usuario a:hover {
+  border-radius: 5px;
+  background-color: #282626;
+  color: #f9f9f9;
+}
+
+#menu-usuario #botao-encerrar {
+  color: #525252;
+}
+
+#menu-usuario #botao-encerrar:hover {
+  background-color: unset;
+}
