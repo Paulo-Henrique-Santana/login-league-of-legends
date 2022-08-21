@@ -52,9 +52,9 @@
     <div id="menu-usuario">
       <nav>
         <ul>
-          <li><a href="#">Configurações</a></li>
+          <li><a id="botao-configs" href="#">Configurações</a></li>
           <li><a id="botao-encerrar" href="#">Encerrar Sessão</a></li>
-          <li><a href="#">Sair</a></li>
+          <li><a id="botao-sair" href="#">Sair</a></li>
         </ul>
       </nav>
     </div>
@@ -77,44 +77,45 @@
     </div>
   </section>
 
-  <!-- <section id="container-modal-configs">
+  <section id="container-modal-configs">
     <div id="modal-configs">
       <button id="configs-btn-fechar">x</button>
-      <div>
+      <div id="configs-menu">
         <h1>Configurações</h1>
+        <button>Cliente Riot</button>
         <button>League of Legends</button>
       </div>
-      <div>
+      <div id="configs-opcoes">
         <h2>League of Legends</h2>
-        <div>
-          <p>Idioma do texto do jogo</p>
+        <div class="container-opcao">
+          <label>Idioma do texto do jogo</label>
           <select name="" id="">
             <option value="">Português</option>
           </select>
         </div>
-        <div>
-          <p>Patchline Atual</p>
+        <div class="container-opcao">
+          <label>Patchline Atual</label>
           <select name="" id="">
-            <option value="">Live(BR)</option>
+            <option value="">Live (BR)</option>
           </select>
         </div>
-        <div>
-          <p>Caminho de instalação</p>
-          <select name="" id="">
+        <div class="container-opcao">
+          <label>Caminho de instalação</label>
+          <select name="" id="" disabled>
             <option value="">E:\Riot Games\League of Legends</option>
           </select>
         </div>
-        <button>Reparar</button>
+        <button id="botao-reparar">Reparar</button>
       </div>
       <footer>
-        <p>Termos de Serviço</p>
-        <p>Terceiros</p>
-        <p>Aviso de Privacidade</p>
-        <p>v55.0.5.4569054</p>
+        <p><a href="">Termos de Serviço</a></p>
+        <p><a href="">Terceiros</a></p>
+        <p><a href="">Aviso de Privacidade</a></p>
+        <p><a href="">v55.0.5.4569054</a></p>
       </footer>
     </div>
-  </section> -->
+  </section>
 
-  <script src="modal.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

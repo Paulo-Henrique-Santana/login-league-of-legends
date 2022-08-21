@@ -14,9 +14,143 @@
 }
 
 #modal-configs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   border-radius: 10px 10px 0 0;
   width: 85vw;
   height: 95vh;
   background-color: #141212;
   color: white;
+}
+
+#configs-btn-fechar {
+  grid-column: 1 / -1;
+  justify-self: end;
+  margin: 20px;
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background-color: #201e1e;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+#configs-menu {
+  padding: 0 80px;
+}
+
+#configs-menu h1 {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#configs-menu button {
+  display: block;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 100px 10px 8px;
+  width: 100%;
+  background-color: unset;
+  color: #525252;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#configs-menu button:hover {
+  color: #f9f9f9;
+}
+
+#configs-menu button:focus {
+  background-color: #2c2a2a;
+  color: white;
+}
+
+#configs-opcoes {
+  padding-left: 100px;
+}
+
+#configs-opcoes h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.container-opcao {
+  margin: 50px 0;
+}
+
+.container-opcao label {
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 1000;
+}
+
+.container-opcao select {
+  background-color: #201e1e;
+  color: white;
+  border: none;
+  border-right: 10px solid #201e1e;
+  border-radius: 4px;
+  padding: 15px;
+  width: 65%;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#configs-opcoes select:hover {
+  background-color: #262424;
+  border-right: 10px solid #262424;
+}
+
+
+#botao-reparar {
+  background-color: #e5e5e5;
+  border-radius: 13px;
+  width: 350px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#botao-reparar:hover {
+  background-color: #f0f0f0;
+}
+
+#modal-configs footer {
+  grid-column: 1 / -1;
+  padding-left: 80px;
+  padding-bottom: 80px;
+}
+
+#modal-configs footer a {
+  color: #6e6e6e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#modal-configs footer p:not(:last-child) a:hover {
+  color: white;
+}
+
+#modal-configs footer p + p {
+  margin-top: 5px;
+}
+
+#modal-configs footer p:last-child a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #383838;
 }
