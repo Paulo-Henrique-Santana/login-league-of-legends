@@ -1,4 +1,4 @@
-const btnAbrirModalVersao = document.querySelector('#versao');
+const btnAbrirModalVersao = document.querySelectorAll('.versao-client');
 const containerModalVersao = document.querySelector('#container-modal-versao');
 const btnFecharModalVersao = document.querySelector('#versao-btn-fechar');
 const btnOk = document.querySelector('#btn-ok');
@@ -14,9 +14,12 @@ function abrirOuFecharElemento(elemento) {
   elemento.classList.toggle('ativo');
 }
 
-btnAbrirModalVersao.addEventListener('click', ()=>{
-  abrirOuFecharElemento(containerModalVersao);
-})
+btnAbrirModalVersao.forEach(element => {
+  element.addEventListener('click', ()=>{
+    abrirOuFecharElemento(containerModalVersao);
+  })
+});
+
 btnFecharModalVersao.addEventListener('click', ()=>{
   abrirOuFecharElemento(containerModalVersao);
 })

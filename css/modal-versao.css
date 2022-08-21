@@ -21,6 +21,7 @@
   background-color: white;
   width: 30vw;
   height: 45vh;
+  z-index: 1;
 }
 
 #versao-btn-fechar {
