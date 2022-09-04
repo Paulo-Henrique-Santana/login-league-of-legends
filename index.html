@@ -19,8 +19,8 @@
     <h1 id="titulo-login">Fazer login</h1>
 
     <form id="formulario-login">  
-      <input class="formulario-campos" type="text" name="" id="" placeholder="Nome de Usuário">
-      <input class="formulario-campos" type="password" name="" id="" placeholder="Senha">
+      <input class="formulario-campos" type="text" placeholder="Nome de Usuário">
+      <input class="formulario-campos" type="password" placeholder="Senha">
 
       <ul id="links">
         <li><a id="link-facebook" class="formulario-link" href="https://www.facebook.com/v13.0/dialog/oauth?client_id=344190606773871&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Ffacebook&state=465b0dce105a4ac12fe91442483512e7b9faf0c1ba05da8c1a5eb1752e99&scope=email" target="_blank"></a></li>
@@ -29,7 +29,7 @@
       </ul>
 
       <div id="container-checkbox">
-        <input type="checkbox" name="" id="formulario-checkbox">
+        <input type="checkbox" id="formulario-checkbox">
         <label for="formulario-checkbox">Manter login</label>
       </div>
 
@@ -41,7 +41,7 @@
     </div>
 
     <footer id="rodape-login">
-      <span class="versao-client" id="versao">V52.0.1</span>
+      <span class="toggle-versao" id="versao">V52.0.1</span>
     </footer>
   </main>
 
@@ -52,7 +52,7 @@
     <div id="menu-usuario">
       <nav>
         <ul>
-          <li><a id="botao-configs" href="#">Configurações</a></li>
+          <li><a class="toggle-configs" id="botao-configs" href="#">Configurações</a></li>
           <li><a id="botao-encerrar" href="#">Encerrar Sessão</a></li>
           <li><a id="botao-sair" href="#">Sair</a></li>
         </ul>
@@ -62,7 +62,7 @@
 
   <section id="container-modal-versao">
     <div id="modal-versao">
-      <button id="versao-btn-fechar">X</button>
+      <button class="toggle-versao" id="versao-btn-fechar">X</button>
 
       <div>
         <h1>v52.0.1</h1>
@@ -72,20 +72,24 @@
       </div>
 
       <div id="background-btn-ok">
-        <button id="btn-ok">OK</button>
+        <button class="toggle-versao" id="btn-ok">OK</button>
       </div>
     </div>
   </section>
 
   <section id="container-modal-configs">
     <div id="modal-configs">
-      <button id="configs-btn-fechar">x</button>
+      <button class="toggle-configs" id="configs-btn-fechar">x</button>
+
       <div id="configs-menu">
         <h1>Configurações</h1>
-        <button>Cliente Riot</button>
-        <button>League of Legends</button>
+        <input type="radio" id="botao-opcao-client" name="opcao" value="client" checked>
+        <label for="botao-opcao-client">Cliente Riot</label>
+        <input type="radio" id="botao-opcao-lol" name="opcao" value="lol">
+        <label for="botao-opcao-lol">League of Legends</label>
       </div>
-      <div id="configs-opcoes">
+
+      <div id="configs-opcoes-lol">
         <h2>League of Legends</h2>
         <div class="container-opcao">
           <label>Idioma do texto do jogo</label>
@@ -107,11 +111,32 @@
         </div>
         <button id="botao-reparar">Reparar</button>
       </div>
+
+      <div id="configs-opcoes-client">
+        <h2>Cliente Riot</h2>
+        <div class="container-opcao">
+          <label>Idioma</label>
+          <select name="" id="">
+            <option value="">Português</option>
+            <option value="">Bahasa Indonesia</option>
+            <option value="">Bahasa Melayu</option>
+            <option value="">Deutsch</option>
+            <option value="">English</option>
+            <option value="">Español (LATAM)</option>
+            <option value="">Español (ES)</option>
+            <option value="">Français</option>
+            <option value="">Italiano</option>
+            <option value="">Magyar</option>
+            <option value="">Polski</option>
+          </select>
+        </div>
+      </div>
+
       <footer>
         <p><a href="">Termos de Serviço</a></p>
         <p><a href="">Terceiros</a></p>
         <p><a href="">Aviso de Privacidade</a></p>
-        <p><a class="versao-client">v55.0.5.4569054</a></p>
+        <p><a class="toggle-versao">v55.0.5.4569054</a></p>
       </footer>
     </div>
   </section>

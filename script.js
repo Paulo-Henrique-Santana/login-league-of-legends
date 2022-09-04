@@ -1,38 +1,56 @@
-const btnAbrirModalVersao = document.querySelectorAll('.versao-client');
-const containerModalVersao = document.querySelector('#container-modal-versao');
-const btnFecharModalVersao = document.querySelector('#versao-btn-fechar');
-const btnOk = document.querySelector('#btn-ok');
-
-const btnUsuario = document.querySelector('#botao-usuario');
-const menuUsuario = document.querySelector('#menu-usuario');
-const btnConfigsMenuUsuario = document.querySelector('#botao-configs')
-
-const containerModalConfigs = document.querySelector('#container-modal-configs');
-const btnFecharModalConfigs = document.querySelector('#configs-btn-fechar');
-
 function abrirOuFecharElemento(elemento) {
   elemento.classList.toggle('ativo');
 }
 
-btnAbrirModalVersao.forEach(element => {
+// Modal Versão
+
+const btnToggleVersao = document.querySelectorAll('.toggle-versao');
+const modalVersao = document.querySelector('#container-modal-versao');
+
+btnToggleVersao.forEach(element => {
   element.addEventListener('click', ()=>{
-    abrirOuFecharElemento(containerModalVersao);
-  })
+    abrirOuFecharElemento(modalVersao);
+  });
 });
 
-btnFecharModalVersao.addEventListener('click', ()=>{
-  abrirOuFecharElemento(containerModalVersao);
-})
-btnOk.addEventListener('click', ()=>{
-  abrirOuFecharElemento(containerModalVersao);
-})
+// Menu Usuário
+
+const btnUsuario = document.querySelector('#botao-usuario');
+const menuUsuario = document.querySelector('#menu-usuario');
+
 btnUsuario.addEventListener('click', ()=>{
   abrirOuFecharElemento(menuUsuario);
-})
-btnConfigsMenuUsuario.addEventListener('click', ()=>{
-  abrirOuFecharElemento(containerModalConfigs);
-  abrirOuFecharElemento(menuUsuario);
-})
-btnFecharModalConfigs.addEventListener('click', ()=>{
-  abrirOuFecharElemento(containerModalConfigs);
-})
+});
+
+// Modal Configurações
+
+const btnToggleConfigs = document.querySelectorAll('.toggle-configs');
+const modalConfigs = document.querySelector('#container-modal-configs');
+
+btnToggleConfigs.forEach(element => {
+  element.addEventListener('click', ()=>{
+    abrirOuFecharElemento(modalConfigs);
+    abrirOuFecharOpcoes();
+  });
+});
+
+// Opções Configurações
+
+const btnOpcaoClient = document.querySelector('#botao-opcao-client');
+const btnOpcaoLol = document.querySelector('#botao-opcao-lol');
+
+const opcoesClient = document.querySelector('#configs-opcoes-client');
+const opcoesLol = document.querySelector('#configs-opcoes-lol');
+
+function abrirOuFecharOpcoes() {
+  if (btnOpcaoClient.checked) {
+    opcoesClient.classList.add('ativo');
+    opcoesLol.classList.remove('ativo');
+  } else {
+    opcoesLol.classList.add('ativo');
+    opcoesClient.classList.remove('ativo');
+  }
+}
+
+btnOpcaoClient.addEventListener('click', abrirOuFecharOpcoes);
+btnOpcaoLol.addEventListener('click', abrirOuFecharOpcoes);
