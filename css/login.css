@@ -1,3 +1,20 @@
+#container-principal {
+  display: grid;
+  grid-template-rows: minmax(auto, 250px) 1fr minmax(auto, 150px);
+  background-color: #f9f9f9;
+}
+
+#logo-riot {
+  max-width: 130px;
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+}
+
+#container-formulario {
+  justify-self: center;
+}
+
 #titulo-login {
   text-align: center;
   user-select: none;
@@ -18,7 +35,6 @@
 #formulario-login {
   display: flex;
   flex-direction: column;
-  padding: 0 70px;
 }
 
 .formulario-campos {
@@ -39,8 +55,9 @@
 
 .formulario-campos::placeholder {
   font-size: 0.7rem;
+  font-weight: 900;
   text-transform: uppercase;
-  color: #b2b2b2;
+  color: #999999;
 }
 
 .formulario-link {
@@ -50,12 +67,6 @@
   width: 95px;
   height: 35px;
   border-radius: 4px;
-}
-
-#logo-riot {
-  padding: 100px;
-  width: 130px;
-  margin: 0 auto;
 }
 
 #links {
@@ -131,33 +142,33 @@ form button.ativo:hover {
   border: 4px solid #bc252a;
 }
 
-#recuperar-conta {
+#container-final {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+
+#recuperar-conta, #criar-conta {
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   user-select: none;
-  padding-bottom: 50px;
-  position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%;
 }
 
-#recuperar-conta a {
+#recuperar-conta a, #criar-conta a {
   color: #b2b2b2;
 }
 
-#recuperar-conta a:hover {
+#recuperar-conta a:hover, #criar-conta a:hover {
   color: #111111;
 }
 
-#rodape-login {
-  position: absolute;
-  right: 50px;
-  bottom: 47px;
-}
-
 #versao {
+  position: absolute;
+  bottom: -5px;
+  right: -70px;
   font-size: 0.7rem;
   font-weight: 800;
   color: #c7c7c7;

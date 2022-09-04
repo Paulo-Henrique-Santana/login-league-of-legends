@@ -12,41 +12,47 @@
   <link rel="shortcut icon" href="./img/riot-favicon.webp" type="image/x-icon">
   <title>Login</title>
 </head>
+
 <body>
-  <main>
+  <main id="container-principal">
     <img id="logo-riot" src="./img/riot-games-logo.png" alt="Logo Riot Games">
 
-    <h1 id="titulo-login">Fazer login</h1>
+    <div id="container-formulario">
+      <h1 id="titulo-login">Fazer login</h1>
 
-    <form id="formulario-login">  
-      <input class="formulario-campos" type="text" placeholder="Nome de Usuário">
-      <input class="formulario-campos" type="password" placeholder="Senha">
+      <form id="formulario-login">
+        <input class="formulario-campos" type="text" placeholder="Nome de Usuário">
+        <input class="formulario-campos" type="password" placeholder="Senha">
 
-      <ul id="links">
-        <li><a id="link-facebook" class="formulario-link" href="https://www.facebook.com/v13.0/dialog/oauth?client_id=344190606773871&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Ffacebook&state=465b0dce105a4ac12fe91442483512e7b9faf0c1ba05da8c1a5eb1752e99&scope=email" target="_blank"></a></li>
-        <li><a id="link-google" class="formulario-link" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=openid%20profile%20email&state=685ff61e90cf36e1a28eb3454adc97b8aadab322420a1913049044c5f7b3&prompt=select_account&response_type=code&client_id=187685766663-ct6bdnthcq6jlllecpg1guhthoc7i8vv.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fgoogle&flowName=GeneralOAuthFlow" target="_blank"><img src="./img/google-icon.png" alt="Ícone Google"></a></li>
-        <li><a id="link-apple" class="formulario-link" href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&response_mode=form_post&client_id=com.riotgames.authenticator.prod.client&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fapple&scope=name%20email&nonce=f3fe1ad8e07f5a9c5566dd6b91df1caf8d81a55d60fc6f8f9fb6e56a399b&state=574dc433ef7b0a935a9c895bf5c9e999e297a990e5f7895528f0193d2758" target="_blank"><img src="./img/icone-apple.png" alt=""></a></li>
-      </ul>
+        <ul id="links">
+          <li><a id="link-facebook" class="formulario-link" href="https://www.facebook.com/v13.0/dialog/oauth?client_id=344190606773871&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Ffacebook&state=465b0dce105a4ac12fe91442483512e7b9faf0c1ba05da8c1a5eb1752e99&scope=email" target="_blank"></a></li>
+          <li><a id="link-google" class="formulario-link" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=openid%20profile%20email&state=685ff61e90cf36e1a28eb3454adc97b8aadab322420a1913049044c5f7b3&prompt=select_account&response_type=code&client_id=187685766663-ct6bdnthcq6jlllecpg1guhthoc7i8vv.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fgoogle&flowName=GeneralOAuthFlow" target="_blank"><img src="./img/google-icon.png" alt="Ícone Google"></a></li>
+          <li><a id="link-apple" class="formulario-link" href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&response_mode=form_post&client_id=com.riotgames.authenticator.prod.client&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fapple&scope=name%20email&nonce=f3fe1ad8e07f5a9c5566dd6b91df1caf8d81a55d60fc6f8f9fb6e56a399b&state=574dc433ef7b0a935a9c895bf5c9e999e297a990e5f7895528f0193d2758" target="_blank"><img src="./img/icone-apple.png" alt=""></a></li>
+        </ul>
 
-      <div id="container-checkbox">
-        <input type="checkbox" id="formulario-checkbox">
-        <label for="formulario-checkbox">Manter login</label>
-      </div>
+        <div id="container-checkbox">
+          <input type="checkbox" id="formulario-checkbox">
+          <label for="formulario-checkbox">Manter login</label>
+        </div>
 
-      <!-- <button>x</button> -->
-    </form>
-
-    <div id="recuperar-conta">
-      <a href="https://recovery.riotgames.com/pt-br?region=BR1" target="_blank">Não consegue iniciar sessão?</a>
+        <!-- <button>x</button> -->
+      </form>
     </div>
 
-    <footer id="rodape-login">
+    <div id="container-final">
+      <div id="recuperar-conta">
+        <a href="https://recovery.riotgames.com/pt-br?region=BR1" target="_blank">Não consegue iniciar sessão?</a>
+      </div>
+      <div id="criar-conta">
+        <a href="https://signup.leagueoflegends.com/pt-br/signup/index#/" target="_blank">Criar Conta</a>
+      </div>
+      
       <span class="toggle-versao" id="versao">V52.0.1</span>
-    </footer>
+    </div>
   </main>
 
   <div id="container-tema-lol">
-    <img id="tema-lol" src="./img/Star-Guardian.png" alt="Star Guardian">
+    <img id="tema-lol" src="./img/udyr-tema.jpg" alt="Udyr">
     <div id="botao-usuario"><img src="img/usuario-icone.png" alt=""></div>
 
     <div id="menu-usuario">

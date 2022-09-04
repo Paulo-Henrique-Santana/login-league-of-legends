@@ -7,16 +7,8 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(auto, 450px) auto;
   height: 100vh;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  background-color: #f9f9f9;
-  position: relative;
 }
 
 img {
@@ -57,4 +49,13 @@ ul {
 
 #botao-usuario:hover {
   filter: brightness(130%);
+}
+
+@media (max-width: 650px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  #container-tema-lol {
+    display: none;
+  }
 }
