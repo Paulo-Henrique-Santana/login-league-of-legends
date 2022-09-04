@@ -62,7 +62,6 @@
   border: none;
   border-radius: 6px;
   padding: 5px 100px 10px 8px;
-  width: 100%;
   color: #525252;
   font-size: 1.1rem;
   font-weight: 900;
@@ -75,7 +74,7 @@
   color: #f9f9f9;
 }
 
-#configs-menu label.ativo {
+#configs-menu input:checked + label {
   background-color: #2c2a2a;
   color: white;
 }
