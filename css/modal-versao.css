@@ -15,12 +15,12 @@
 
 #modal-versao {
   display: grid;
-  grid-template-rows: 70px auto auto;
+  grid-template-rows: 20% auto auto;
   justify-items: center;
   border-radius: 6px;
   background-color: white;
-  width: 30vw;
-  height: 45vh;
+  min-width: 30vw;
+  min-height: 45vh;
   z-index: 1;
 }
 
@@ -31,8 +31,8 @@
   justify-self: end;
   border: none;
   border-radius: 4px;
-  margin-top: 15px;
-  margin-right: 15px;
+  margin-top: 3%;
+  margin-right: 3%;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -44,11 +44,11 @@
 }
 
 #modal-versao p {
- margin: 20px;
- font-size: 1.2rem;
- font-weight: 500;
- color: #6f6f6f;
- text-align: center;
+  margin: 20px 30px 0 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6f6f6f;
+  text-align: center;
 }
 
 #background-btn-ok {
@@ -64,10 +64,27 @@
   border: none;
   border-radius: 10px;
   width: 80%;
-  height: 60px;
+  height: 55%;
   background-color: #292727;
   color: white;
   font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  #versao-btn-fechar {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  #modal-versao p {
+    font-size: 1rem;
+  }
+  #modal-versao h1 {
+    font-size: 1.3rem;
+  }
+  #btn-ok {
+    font-size: 1.1rem;
+  }
 }

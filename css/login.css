@@ -1,6 +1,6 @@
 #container-principal {
   display: grid;
-  grid-template-rows: minmax(auto, 250px) 1fr minmax(auto, 150px);
+  grid-template-rows: 25% auto auto 150px;
   background-color: #f9f9f9;
 }
 
@@ -21,15 +21,6 @@
   font-size: 1.5rem;
   font-weight: 800;
   padding-bottom: 10px;
-}
-
-#links {
-  display: flex;
-  justify-content: space-between;
-}
-
-#links li {
-  list-style: none;
 }
 
 #formulario-login {
@@ -59,6 +50,16 @@
   text-transform: uppercase;
   color: #999999;
 }
+
+#links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#links li {
+  list-style: none;
+}
+
 
 .formulario-link {
   display: flex;
@@ -121,30 +122,34 @@
   margin-left: 5px;
 }
 
-#formulario-login button {
-  margin-top: 200px;
+#botao-login {
   width: 80px;
   height: 80px;
   background-color: transparent;
-  border: 4px solid #e8e8e8;
+  border: 2px solid #e8e8e8;
   border-radius: 20px;
-  align-self: center;
+  justify-self: center;
+  align-self: flex-end;
 }
 
-#formulario-login button.ativo {
+#botao-login.ativo {
   background-color: #d13639;
   border: 4px solid #d13639;
   cursor: pointer;
 }
 
-form button.ativo:hover {
+#botao-login.ativo:hover {
   background-color: #bc252a;
   border: 4px solid #bc252a;
 }
 
+#botao-login img {
+  width: 30px;
+  margin: 0 auto;
+}
+
 #container-final {
   position: relative;
-  justify-self: center;
   align-self: center;
 }
 
@@ -168,7 +173,7 @@ form button.ativo:hover {
 #versao {
   position: absolute;
   bottom: -5px;
-  right: -70px;
+  right: 10%;
   font-size: 0.7rem;
   font-weight: 800;
   color: #c7c7c7;

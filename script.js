@@ -2,6 +2,26 @@ function ativarOuDesativarElemento(elemento) {
   elemento.classList.toggle('ativo');
 }
 
+// Login
+
+const usuario = document.querySelector('#campo-usuario');
+const senha = document.querySelector('#campo-senha');
+const botaoLogin = document.querySelector('#botao-login');
+const imgbotaoLogin = document.querySelector('#botao-login img');
+
+function verificarCampos() {
+  if (usuario.value !== '' && senha.value !== '') {
+    imgbotaoLogin.src = './img/seta-branca.png';
+    botaoLogin.classList.add('ativo');
+  } else {
+    imgbotaoLogin.src = './img/seta.png';
+    botaoLogin.classList.remove('ativo');
+  }
+}
+
+usuario.addEventListener('keyup', verificarCampos);
+senha.addEventListener('keyup', verificarCampos);
+
 // Modal Versão
 
 const btnToggleVersao = document.querySelectorAll('.toggle-versao');

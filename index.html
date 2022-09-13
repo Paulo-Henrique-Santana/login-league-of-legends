@@ -20,9 +20,9 @@
     <div id="container-formulario">
       <h1 id="titulo-login">Fazer login</h1>
 
-      <form id="formulario-login">
-        <input class="formulario-campos" type="text" placeholder="Nome de Usuário">
-        <input class="formulario-campos" type="password" placeholder="Senha">
+       <form id="formulario-login">
+        <input class="formulario-campos" id="campo-usuario" type="text" placeholder="Nome de Usuário">
+        <input class="formulario-campos" id="campo-senha" type="password" placeholder="Senha">
 
         <ul id="links">
           <li><a id="link-facebook" class="formulario-link" href="https://www.facebook.com/v13.0/dialog/oauth?client_id=344190606773871&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Ffacebook&state=465b0dce105a4ac12fe91442483512e7b9faf0c1ba05da8c1a5eb1752e99&scope=email" target="_blank"></a></li>
@@ -35,9 +35,9 @@
           <label for="formulario-checkbox">Manter login</label>
         </div>
 
-        <!-- <button>x</button> -->
       </form>
     </div>
+    <button id="botao-login"><img src="./img/seta.png" alt=""></button>
 
     <div id="container-final">
       <div id="recuperar-conta">
@@ -70,7 +70,7 @@
     <div id="modal-versao">
       <button class="toggle-versao" id="versao-btn-fechar">X</button>
 
-      <div>
+      <div id="sobre-versao">
         <h1>v52.0.1</h1>
         <p>Foundation: 4472310</p>
         <p>UX: 4472310</p>
@@ -87,12 +87,14 @@
     <div id="modal-configs">
       <button class="toggle-configs" id="configs-btn-fechar">x</button>
 
-      <div id="configs-menu">
-        <h1>Configurações</h1>
-        <input type="radio" id="botao-opcao-client" name="opcao" value="client" checked>
-        <label id="label-opcao-client" for="botao-opcao-client">Cliente Riot</label>
-        <input type="radio" id="botao-opcao-lol" name="opcao" value="lol">
-        <label id="label-opcao-lol" for="botao-opcao-lol">League of Legends</label>
+      <div id="configs-menu-bg">
+        <div id="configs-menu">
+          <h1>Configurações</h1>
+          <input type="radio" id="botao-opcao-client" name="opcao" value="client" checked>
+          <label id="label-opcao-client" for="botao-opcao-client">Cliente Riot</label>
+          <input type="radio" id="botao-opcao-lol" name="opcao" value="lol">
+          <label id="label-opcao-lol" for="botao-opcao-lol">League of Legends</label>
+        </div>
       </div>
 
       <div id="configs-opcoes-lol">

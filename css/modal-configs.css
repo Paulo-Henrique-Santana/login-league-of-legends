@@ -15,7 +15,7 @@
 
 #modal-configs {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: minmax(auto, 500px) 1fr;
   grid-template-rows: auto 1fr auto;
   border-radius: 10px 10px 0 0;
   width: 85vw;
@@ -41,7 +41,9 @@
 }
 
 #configs-menu {
-  padding: 0 80px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #configs-menu h1 {
@@ -61,7 +63,7 @@
   display: block;
   border: none;
   border-radius: 6px;
-  padding: 5px 100px 10px 8px;
+  padding: 5px 0px 10px 8px;
   color: #525252;
   font-size: 1.1rem;
   font-weight: 900;
@@ -83,7 +85,7 @@
   padding-left: 100px;
 }
 
-#configs-opcoes h2 {
+#configs-opcoes-lol h2, #configs-opcoes-client h2{
   font-size: 2rem;
   font-weight: 800;
 }
@@ -101,13 +103,16 @@
 }
 
 .container-opcao select {
+  display: block;
   background-color: #201e1e;
   color: white;
+  /* margin-right: 20px; */
   border: none;
   border-right: 10px solid #201e1e;
   border-radius: 4px;
   padding: 15px;
-  width: 65%;
+  /* width: 65%; */
+  /* min-width: 350px; */
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -128,7 +133,8 @@
 #botao-reparar {
   background-color: #e5e5e5;
   border-radius: 13px;
-  width: 350px;
+  width: 32%;
+  min-width: 150px;
   height: 60px;
   font-size: 1.2rem;
   font-weight: 700;
@@ -149,8 +155,8 @@
 
 #modal-configs footer {
   grid-column: 1 / -1;
-  padding-left: 80px;
-  padding-bottom: 80px;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 #modal-configs footer a {
@@ -173,4 +179,24 @@
   margin-top: 20px;
   color: #383838;
   font-size: 0.7rem;
+}
+
+@media (max-width: 800px) {
+  #configs-menu h1 {
+    font-size: 1.2rem;
+  }
+  #configs-opcoes-lol h2, #configs-opcoes-client h2 {
+    font-size: 1.7rem;
+  }
+  #configs-menu label {
+    font-size: 0.8rem;
+  }
+  .container-opcao select {
+    font-size: 0.8rem;
+  }
+  #botao-reparar {
+    font-size: 0.9rem;
+  }
+  .container-opcao select {
+  }
 }
