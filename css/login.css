@@ -1,6 +1,6 @@
 #container-principal {
   display: grid;
-  grid-template-rows: 25% auto auto 150px;
+  grid-template-rows: 25% 1fr 1fr 150px;
   background-color: #f9f9f9;
 }
 
@@ -75,6 +75,11 @@
   margin-bottom: 10px;
 }
 
+#links img {
+  width: 20px;
+  height: 20px;
+}
+
 #link-facebook {
   background-color: #1877f2;
 }
@@ -93,22 +98,12 @@
   background-color: #f7f7f7;
 }
 
-#link-google img {
-  width: 20px;
-  height: 20px;
-}
-
 #link-apple {
   background-color: #000000;
 }
 
 #link-apple:hover {
   background-color: #141414;
-}
-
-#link-apple img {
-  width: 20px;
-  height: 20px;
 }
 
 #container-checkbox {
