@@ -2,7 +2,7 @@ function ativarOuDesativarElemento(elemento) {
   elemento.classList.toggle('ativo');
 }
 
-// Login
+// Login - Ativar botão do login
 
 const usuario = document.querySelector('#campo-usuario');
 const senha = document.querySelector('#campo-senha');
@@ -10,7 +10,7 @@ const botaoLogin = document.querySelector('#botao-login');
 const imgbotaoLogin = document.querySelector('#botao-login img');
 
 function verificarCampos() {
-  if (usuario.value !== '' && senha.value !== '') {
+  if (usuario.value.length >= 2 && senha.value !== '') {
     imgbotaoLogin.src = './img/seta-branca.png';
     botaoLogin.classList.add('ativo');
   } else {
@@ -19,7 +19,16 @@ function verificarCampos() {
   }
 }
 
+function erroCampoUsuario() {
+  if (usuario.value.length === 1) {
+    usuario.classList.add('erro');
+  } else {
+    usuario.classList.remove('erro');
+  }
+}
+
 usuario.addEventListener('keyup', verificarCampos);
+usuario.addEventListener('focusout', erroCampoUsuario);
 senha.addEventListener('keyup', verificarCampos);
 
 // Modal Versão
