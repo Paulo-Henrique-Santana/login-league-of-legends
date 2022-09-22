@@ -34,34 +34,55 @@ senha.addEventListener('keyup', verificarCampos);
 // Modal Versão
 
 const btnToggleVersao = document.querySelectorAll('.toggle-versao');
-const modalVersao = document.querySelector('#container-modal-versao');
+const containerModalVersao = document.querySelector('#container-modal-versao');
+const modalVersao = document.querySelector('#modal-versao');
 
 btnToggleVersao.forEach(element => {
   element.addEventListener('click', ()=>{
-    ativarOuDesativarElemento(modalVersao);
+    ativarOuDesativarElemento(containerModalVersao);
   });
+});
+
+containerModalVersao.addEventListener('click', (event) => {
+  if (!event.target.matches('#container-modal-versao *')){
+    containerModalVersao.classList.remove('ativo');
+  }
 });
 
 // Menu Usuário
 
 const btnUsuario = document.querySelector('#botao-usuario');
 const menuUsuario = document.querySelector('#menu-usuario');
+const btnConfigs = document.querySelector('#botao-configs');
 
-btnUsuario.addEventListener('click', ()=>{
+btnUsuario.addEventListener('click', (event)=>{
   ativarOuDesativarElemento(menuUsuario);
+});
+
+document.addEventListener('click', event => {
+  const elementoClicado = event.target.outerHTML;
+  if (!menuUsuario.outerHTML.includes(elementoClicado) && !btnUsuario.outerHTML.includes(elementoClicado)) {
+    menuUsuario.classList.remove('ativo');
+  }
 });
 
 // Modal Configurações
 
 const btnToggleConfigs = document.querySelectorAll('.toggle-configs');
-const modalConfigs = document.querySelector('#container-modal-configs');
+const containerModalConfigs = document.querySelector('#container-modal-configs');
 
 btnToggleConfigs.forEach(element => {
   element.addEventListener('click', ()=>{
-    ativarOuDesativarElemento(modalConfigs);
+    ativarOuDesativarElemento(containerModalConfigs);
     alternarOpcoes();
   });
 });
+
+containerModalConfigs.addEventListener('click', event => {
+  if (!event.target.matches('#container-modal-configs *')) {
+    containerModalConfigs.classList.remove('ativo');
+  }
+})
 
 // Opções Configurações
 

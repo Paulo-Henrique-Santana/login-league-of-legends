@@ -1,6 +1,7 @@
 #container-modal-versao {
   position: absolute;
   display: none;
+  z-index: 1;
 }
 
 #container-modal-versao.ativo {
@@ -21,7 +22,6 @@
   background-color: white;
   min-width: 30vw;
   min-height: 45vh;
-  z-index: 1;
 }
 
 #versao-btn-fechar {
