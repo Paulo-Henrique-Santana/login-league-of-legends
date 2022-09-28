@@ -7,7 +7,6 @@
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -22,6 +21,7 @@
   height: 95vh;
   background-color: #141212;
   color: white;
+  animation: show .5s;
 }
 
 #configs-btn-fechar {
@@ -33,11 +33,15 @@
   width: 40px;
   height: 40px;
   background-color: #201e1e;
-  color: white;
+  color: #d2d2d2;
   font-size: 1rem;
   font-weight: bold;
   font-family: cursive;
   cursor: pointer;
+}
+
+#configs-btn-fechar:hover {
+  background-color: #262424;
 }
 
 #configs-menu {
@@ -106,13 +110,13 @@
   display: block;
   background-color: #201e1e;
   color: white;
-  /* margin-right: 20px; */
+  margin-right: 20px;
   border: none;
   border-right: 10px solid #201e1e;
   border-radius: 4px;
   padding: 15px;
-  /* width: 65%; */
-  /* min-width: 350px; */
+  width: 65%;
+  min-width: 300px;
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -164,6 +168,7 @@
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #modal-configs footer p:not(:last-child) a:hover {
@@ -179,6 +184,17 @@
   margin-top: 20px;
   color: #383838;
   font-size: 0.7rem;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @media (max-width: 800px) {

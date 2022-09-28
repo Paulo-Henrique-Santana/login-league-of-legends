@@ -39,6 +39,8 @@
   top: 0px;
   left: 60px;
   border-left: 50px solid transparent;
+  margin-right: 10px;
+  z-index: 1;
 }
 
 #avisos::before {

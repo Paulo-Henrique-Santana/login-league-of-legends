@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: 'Mulish';
-  /* border: 1px solid black; */
+  user-select: none;
 }
 
 body {
   display: grid;
   grid-template-columns: minmax(auto, 450px) auto;
   height: 100vh;
+  overflow: hidden;
 }
 
 img {

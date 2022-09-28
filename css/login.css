@@ -1,7 +1,8 @@
 #container-principal {
   display: grid;
-  grid-template-rows: 25% 1fr 1fr 150px;
+  grid-template-rows: 25% 1fr 15% 15%;
   background-color: #f9f9f9;
+  height: 100vh;
 }
 
 #logo-riot {
@@ -13,11 +14,12 @@
 
 #container-formulario {
   justify-self: center;
+  width: 70%;
 }
 
 #titulo-login {
   text-align: center;
-  user-select: none;
+  ct: none;
   font-size: 1.5rem;
   font-weight: 800;
   padding-bottom: 10px;
@@ -72,7 +74,7 @@
 .formulario-campos {
   display: block;
   box-sizing: border-box;
-  width: 300px;
+  width: 100%;
   margin-top: 20px;
   border: 2px solid #ededed;
   border-radius: 4px;
@@ -105,13 +107,13 @@
 
 #links li {
   list-style: none;
+  width: 32%;
 }
 
 .formulario-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95px;
   height: 35px;
   border-radius: 4px;
 }
@@ -123,10 +125,13 @@
 
 #link-facebook {
   background-color: #1877f2;
+  border: 2px solid #1771e6;
+  box-sizing: border-box;
 }
 
 #link-facebook:hover {
   background-color: #0966de;
+  border: 2px solid #0961d3;
 }
 
 #link-google {
@@ -137,14 +142,18 @@
 
 #link-google:hover {
   background-color: #f7f7f7;
+  border: 2px solid #eaeaea;
 }
 
 #link-apple {
   background-color: #000000;
+  border: 2px solid #0d0d0d;
+  box-sizing: border-box;
 }
 
 #link-apple:hover {
   background-color: #141414;
+  border: 2px solid #202020;
 }
 
 #container-checkbox {
@@ -154,7 +163,7 @@
 #container-checkbox label {
   font-weight: bold;
   font-size: 0.85rem;
-  user-select: none;
+  ct: none;
   margin-left: 5px;
 }
 
@@ -193,7 +202,7 @@
   font-size: 0.7rem;
   font-weight: 900;
   text-transform: uppercase;
-  user-select: none;
+  ct: none;
   text-align: center;
   width: 100%;
 }

@@ -8,7 +8,6 @@
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,9 +21,11 @@
   background-color: white;
   min-width: 30vw;
   min-height: 45vh;
+  animation: mostrar-modal .3s;
 }
 
 #versao-btn-fechar {
+  background-color: #eeeeee;
   font-size: 1rem;
   font-weight: bold;
   font-family: cursive;
@@ -38,6 +39,10 @@
   cursor: pointer;
 }
 
+#versao-btn-fechar:hover {
+  background-color: #e9e9e9;
+}
+
 #modal-versao h1 {
   font-size: 1.5rem;
   text-align: center;
@@ -49,6 +54,10 @@
   font-weight: 500;
   color: #6f6f6f;
   text-align: center;
+}
+
+#informacoes {
+  animation: mostrar-infos .3s;
 }
 
 #background-btn-ok {
@@ -70,6 +79,32 @@
   font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+#btn-ok:hover {
+  background-color: #211e1f;
+}
+
+@keyframes mostrar-modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 15px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes mostrar-infos {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (max-width: 700px) {
