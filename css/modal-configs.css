@@ -15,7 +15,7 @@
 #modal-configs {
   display: grid;
   grid-template-columns: minmax(auto, 500px) 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr;
   border-radius: 10px 10px 0 0;
   width: 85vw;
   height: 95vh;
@@ -89,13 +89,25 @@
   padding-left: 100px;
 }
 
+.container-titulo {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.icone-titulo {
+  width: 35px;
+  height: 35px;
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
 #configs-opcoes-lol h2, #configs-opcoes-client h2{
   font-size: 2rem;
   font-weight: 800;
 }
 
 .container-opcao {
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 .container-opcao label {
@@ -157,8 +169,41 @@
   display: block;
 }
 
+#termos {
+  max-width: 730px;
+  color: #f4f3f3;
+  font-weight: bold;
+  overflow: auto;
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+#termos p, #termos li, #termos dt, #termos dd {
+  margin-bottom: 23px;
+}
+
+#termos ul, ol {
+  margin-top: 23px;
+}
+
+#termos ul li {
+  text-indent: 27px;
+  position: relative;
+}
+
+#termos ul li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 17px;
+  top: 9px;
+}
+
 #modal-configs footer {
-  grid-column: 1 / -1;
+  grid-column: 1 / 2;
   margin-left: 5%;
   margin-bottom: 5%;
 }
